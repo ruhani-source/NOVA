@@ -1,6 +1,7 @@
 import json
 import os
 import time
+import re
 
 from google import genai
 from google.genai import types
@@ -98,7 +99,16 @@ DOCUMENT:
             if attempt == 2:
                 raise
 
-            print(f"⚠️ Gemini unavailable — retrying in {2 ** (attempt + 1)}s...")
-            time.sleep(2 ** (attempt + 1))
+            error_text = str(error)
+
+            # Respect Gemini's requested wait time for rate limits.
+            if "429" in error_text or "RESOURCE_EXHAUSTED" in error_text:
+                match = re.search(r"'retryDelay': '([0-9]+)s'", error_text)
+                wait_time = int(match.group(1)) + 2 if match else 60
+            else:
+                wait_time = 2 ** (attempt + 1)
+
+            print(f"⚠️ Gemini unavailable — waiting {wait_time}s...")
+            time.sleep(wait_time)
 
     return json.loads(response.text)

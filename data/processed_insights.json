@@ -1,0 +1,1332 @@
+[
+  {
+    "filename": "Plan_NOVA_preliminaire_juin.xlsx",
+    "file_type": "xlsx",
+    "metadata": {
+      "warning": "File has .xlsx extension but contains plain text",
+      "detected_type": "text"
+    },
+    "insights": {
+      "decisions": [
+        "Garder le ticket SEC-210 en validation jusqu'au re-test"
+      ],
+      "owners": [
+        "Julien (Boréal)",
+        "Sophie"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Julien a déployé le fix pour SEC-210",
+        "Sophie et son équipe vont effectuer un re-test"
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "DATA-401.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [],
+      "commitments": [],
+      "risks": []
+    }
+  },
+  {
+    "filename": "Architecture_NOVA_v2.pdf",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".pdf",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Boréal Numérique Inc."
+      ],
+      "deadlines": [
+        "2026-07-31"
+      ],
+      "commitments": [
+        "Développement phase 1 - acompte"
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "INT-101_extrait_logs.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [],
+      "commitments": [],
+      "risks": []
+    }
+  },
+  {
+    "filename": "E03_Confirmation_Canada_Central.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Sophie Lambert <sophie.lambert@demo.example>",
+      "to": "elodie.caron@demo.example, marc.gervais@demo.example",
+      "subject": "RE: NOVA - architecture v1",
+      "date": "Wed, 22 Jul 2026 14:32:00 -0400"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Sophie Lambert"
+      ],
+      "deadlines": [
+        "demain"
+      ],
+      "commitments": [
+        "À trancher demain en atelier concernant la localisation des données de production."
+      ],
+      "risks": [
+        "Incertitude sur la compatibilité de la localisation East US avec les exigences du projet NOVA.",
+        "Exigence que les données de production demeurent au Canada."
+      ]
+    }
+  },
+  {
+    "filename": "E12_Resolution_integration.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Alex Deschamps <alex.deschamps@demo.example>",
+      "to": "nicolas.perron@demo.example",
+      "subject": "Brouillon communication NOVA - projet au vert",
+      "date": "Mon, 21 Sep 2026 16:28:00 -0400"
+    },
+    "insights": {
+      "decisions": [
+        "NOVA project status is set to green, as security and accessibility are completed."
+      ],
+      "owners": [
+        "Alex Deschamps",
+        "Nicolas Perron"
+      ],
+      "deadlines": [
+        "22 octobre 2026"
+      ],
+      "commitments": [
+        "Alex Deschamps is preparing a status message communicating that NOVA is green."
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "Architecture_NOVA_v1.pdf",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".pdf",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Boréal Numérique"
+      ],
+      "deadlines": [
+        "4 septembre 2026"
+      ],
+      "commitments": [],
+      "risks": [
+        "Aucun numéro d’approbation ni signature de comité n’est présent dans ce document",
+        "Statut du document: BROUILLON - APPROBATION REQUISE"
+      ]
+    }
+  },
+  {
+    "filename": "INT-101.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Correction appliquee : cle d'idempotence basee sur external_request_id."
+      ],
+      "owners": [
+        "Camille Beaulieu"
+      ],
+      "deadlines": [
+        "2 septembre 2026",
+        "9 septembre"
+      ],
+      "commitments": [
+        "Lot de 15 000 evenements rejoue pour validation le 9 septembre."
+      ],
+      "risks": [
+        "Le meme dossier peut etre cree deux fois lorsque deux messages Kafka concernant le meme evenement sont consommes presque simultanement."
+      ]
+    }
+  },
+  {
+    "filename": "Charte_Projet_NOVA_v1.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [],
+      "commitments": [],
+      "risks": []
+    }
+  },
+  {
+    "filename": "Teams_19sept_Securite.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "L'environnement de production de NOVA sera déployé dans Canada Central."
+      ],
+      "owners": [
+        "Boréal",
+        "L'équipe architecture"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Boréal doit migrer les ressources prévues.",
+        "L'équipe architecture doit publier une version mise à jour du schéma.",
+        "Une validation technique doit confirmer la migration avant les tests de production."
+      ],
+      "risks": [
+        "L'architecture initiale utilisait une région américaine et les données doivent demeurer au Canada."
+      ]
+    }
+  },
+  {
+    "filename": "M05_CR_Suivi_18sept.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "La migration de l'architecture vers Canada Central est déclarée terminée par Boréal et vérifiée par l'équipe architecture."
+      ],
+      "owners": [
+        "Boréal",
+        "Mélissa",
+        "Sophie",
+        "Camille",
+        "Élodie",
+        "Marc",
+        "l'équipe architecture"
+      ],
+      "deadlines": [
+        "15 octobre"
+      ],
+      "commitments": [
+        "Boréal doit fournir une build de stabilisation début septembre."
+      ],
+      "risks": [
+        "Les tests d'accessibilité ont identifié plusieurs anomalies. Certaines sont déjà corrigées, d'autres restent en traitement.",
+        "Le connecteur interne demeure un point d'attention mais aucun retard officiel de la date du 15 octobre n'est approuvé à ce moment.",
+        "Le premier lot de migration a produit quelques doublons à investiguer."
+      ]
+    }
+  },
+  {
+    "filename": "E08_Correctif_journalisation.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Amélie Fortin <amelie.fortin@demo.example>",
+      "to": "nicolas.perron@demo.example",
+      "subject": "INV-003 - référence CR-04?",
+      "date": "Wed, 23 Sep 2026 10:18:00 -0400"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Amélie Fortin",
+        "Nicolas"
+      ],
+      "deadlines": [],
+      "commitments": [],
+      "risks": [
+        "Absence d'approbation pour la ligne de 18 000 $ \"Optimisation interface mobile - CR-04\" dans la facture INV-003"
+      ]
+    }
+  },
+  {
+    "filename": "E02_Question_hebergement.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Élodie Caron <elodie.caron@demo.example>",
+      "to": "equipe-nova@demo.example",
+      "subject": "NOVA - confirmation du démarrage",
+      "date": "Tue, 07 Jul 2026 16:10:00 -0400"
+    },
+    "insights": {
+      "decisions": [
+        "Confirmation du démarrage de NOVA"
+      ],
+      "owners": [
+        "Élodie Caron"
+      ],
+      "deadlines": [
+        "15 octobre"
+      ],
+      "commitments": [
+        "Élodie Caron prend le rôle de chargée de projet",
+        "Signalement rapide de tout enjeu susceptible d'affecter le chemin critique"
+      ],
+      "risks": [
+        "Enjeux susceptibles d'affecter le chemin critique"
+      ]
+    }
+  },
+  {
+    "filename": "INV-003.pdf",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".pdf",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [
+        "Conception et réalisation de la phase 1 du portail NOVA"
+      ],
+      "owners": [
+        "Organisation Démo",
+        "Boréal Numérique Inc."
+      ],
+      "deadlines": [
+        "7 juillet au 31 octobre 2026"
+      ],
+      "commitments": [
+        "Tout travail hors portée doit faire l’objet d’une demande de changement écrite et approuvée avant exécution et facturation"
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "E04_Corrections_accessibilite.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Julien Moreau <julien.moreau@boreal.example>",
+      "to": "marc.gervais@demo.example, elodie.caron@demo.example",
+      "subject": "NOVA - migration Canada Central complétée",
+      "date": "Wed, 26 Aug 2026 09:05:00 -0400"
+    },
+    "insights": {
+      "decisions": [
+        "La migration des ressources prévues pour NOVA vers Canada Central est complétée."
+      ],
+      "owners": [
+        "Julien Moreau",
+        "Boréal Numérique",
+        "marc.gervais",
+        "elodie.caron"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Fournir le schéma v2 en pièce jointe."
+      ],
+      "risks": [
+        "Aucun blocage identifié lors du test de déploiement et de connectivité."
+      ]
+    }
+  },
+  {
+    "filename": "PERF-501.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [],
+      "commitments": [],
+      "risks": [
+        "connector request GET /internal/cases/88401 failed with 401 Unauthorized due to expired auth token (exp=2026-09-04T23:00:00Z)"
+      ]
+    }
+  },
+  {
+    "filename": "E10_Fonction_mobile.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Nicolas Perron <nicolas.perron@demo.example>",
+      "to": "equipe-nova@demo.example",
+      "subject": "NOVA - cible du 22 octobre et conditions restantes",
+      "date": "Sun, 27 Sep 2026 17:02:00 -0400"
+    },
+    "insights": {
+      "decisions": [
+        "La cible approuvée demeure le 22 octobre"
+      ],
+      "owners": [
+        "Nicolas Perron",
+        "equipe-nova"
+      ],
+      "deadlines": [
+        "22 octobre 2026",
+        "26 septembre 2026"
+      ],
+      "commitments": [
+        "Ne pas communiquer le 22 comme un go garanti tant que ces validations ne sont pas terminées"
+      ],
+      "risks": [
+        "La date du 22 octobre est conditionnelle aux validations restantes : sécurité, accessibilité et préparation exploitation"
+      ]
+    }
+  },
+  {
+    "filename": "Registre_Risques_29sept.xlsx",
+    "file_type": "xlsx",
+    "metadata": {
+      "warning": "File has .xlsx extension but contains plain text",
+      "detected_type": "text"
+    },
+    "insights": {
+      "decisions": [
+        "Le comité a approuvé la date au 22 octobre"
+      ],
+      "owners": [
+        "Nicolas Perron",
+        "Élodie"
+      ],
+      "deadlines": [
+        "22 octobre"
+      ],
+      "commitments": [
+        "Faire mettre à jour la date dans tous les plans",
+        "Suivre le connecteur jusqu'à fermeture formelle",
+        "Obtenir le go sécurité et exploitation avant production"
+      ],
+      "risks": [
+        "Ne pas considérer le mobile avancé comme approuvé"
+      ]
+    }
+  },
+  {
+    "filename": "M06_Transcript_Comite_26sept.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "La date cible de mise en production NOVA est déplacée du 15 octobre au 22 octobre 2026",
+        "Traitement séparé des optimisations mobiles, aucune approbation de dépense aujourd'hui pour ce sujet"
+      ],
+      "owners": [
+        "Julien Moreau",
+        "Sophie Lambert",
+        "Mélissa Gagnon",
+        "Olivier Côté",
+        "Camille Beaulieu",
+        "Élodie Caron",
+        "Nicolas Perron",
+        "Marc Gervais"
+      ],
+      "deadlines": [
+        "22 octobre 2026 pour le lancement et la mise en production NOVA"
+      ],
+      "commitments": [
+        "Mettre les plans et communications à jour suite au déplacement de la date au 22 octobre",
+        "Mélissa Gagnon s'engage à finir le cycle d'accessibilité sans couper de scénarios",
+        "Olivier Côté demande un runbook final au moins quelques jours avant la mise en production"
+      ],
+      "risks": [
+        "Le connecteur a coûté plus de temps que prévu et constitue le chemin critique, touchant les recherches et la synchronisation",
+        "Présence d'anomalies bloquantes nécessitant une stabilisation du connecteur et des tests intégrés"
+      ]
+    }
+  },
+  {
+    "filename": "M01_CR_Demarrage_07juillet.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "INT-101 is closed because 120/120 connector searches returned expected results after applying the fix."
+      ],
+      "owners": [
+        "Marc Gervais"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Marc Gervais confirmed replaying the connector scenarios after the fix."
+      ],
+      "risks": [
+        "The integration problem that had triggered the schedule risk is considered resolved."
+      ]
+    }
+  },
+  {
+    "filename": "DATA-401_echantillon.csv",
+    "file_type": "csv",
+    "metadata": {
+      "row_count": 137
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [],
+      "commitments": [],
+      "risks": []
+    }
+  },
+  {
+    "filename": "Teams_15sept_ProjetNOVA.txt",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".txt",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Boréal Numérique Inc."
+      ],
+      "deadlines": [
+        "2026-09-22"
+      ],
+      "commitments": [
+        "Développement phase 1 - jalon 3 pour un montant de 36 000 $",
+        "Optimisation interface mobile - CR-04 pour un montant de 18 000 $"
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "Courriel_archive_17sept.eml",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".eml",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [
+        "Architecture NOVA - v2 - 25 août 2026 Version révisée après ADR-007"
+      ],
+      "owners": [],
+      "deadlines": [
+        "25 août 2026"
+      ],
+      "commitments": [],
+      "risks": []
+    }
+  },
+  {
+    "filename": "MANIFEST.csv",
+    "file_type": "csv",
+    "metadata": {
+      "row_count": 6
+    },
+    "insights": {
+      "decisions": [
+        "Le package d'optimisation mobile CR-04 à 18k n'est pas approuvé."
+      ],
+      "owners": [
+        "Julien",
+        "Nicolas",
+        "l'équipe de Julien"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Julien vérifie avec son équipe."
+      ],
+      "risks": [
+        "Malentendu sur l'inclusion de l'optimisation avancée mobile dans le scope initial."
+      ]
+    }
+  },
+  {
+    "filename": "M03_CR_Comite_27aout.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Élodie Caron agit comme chargée de projet.",
+        "Budget initial maximal : 180 000 $ CAD.",
+        "Cible de mise en production : 15 octobre 2026.",
+        "La phase 1 comprend SSO, création/suivi de demandes, pièces jointes, workflow, tableau de suivi et rapports standards."
+      ],
+      "owners": [
+        "Élodie Caron",
+        "Nicolas Perron",
+        "Marc Gervais",
+        "Sophie Lambert",
+        "Camille Beaulieu",
+        "Boréal"
+      ],
+      "deadlines": [
+        "15 octobre 2026"
+      ],
+      "commitments": [
+        "Boréal : fournir le premier schéma d'architecture.",
+        "Marc : confirmer les modalités du connecteur interne.",
+        "Sophie : préparer les exigences de sécurité."
+      ],
+      "risks": [
+        "L'expérience mobile avancée n'a pas été discutée comme livrable distinct pendant cette rencontre."
+      ]
+    }
+  },
+  {
+    "filename": "Note_transition_Elodie_16sept.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Maintenir le statut EN VALIDATION pour le ticket SEC-210"
+      ],
+      "owners": [
+        "Sophie Lambert",
+        "Boréal"
+      ],
+      "deadlines": [
+        "12 septembre 2026",
+        "19 sept 10:22",
+        "19 sept 14:05",
+        "26 sept 15:40"
+      ],
+      "commitments": [
+        "Fix déployé sur l'environnement de validation par Boréal",
+        "Refaire le scénario et confirmer par Sophie Lambert",
+        "Ne pas fermer avant validation sécurité selon Sophie Lambert",
+        "Re-test planifié le 26 septembre"
+      ],
+      "risks": [
+        "Audit admin incomplet sur export CSV",
+        "Absence de l'objet (identifiant du dossier) et du résultat dans le journal d'audit lors d'un export CSV",
+        "Priorité bloquante avant production"
+      ]
+    }
+  },
+  {
+    "filename": "SEC-210.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [],
+      "commitments": [],
+      "risks": []
+    }
+  },
+  {
+    "filename": "E09_Rappel_mise_en_production.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Julien Moreau <julien.moreau@boreal.example>",
+      "to": "sophie.lambert@demo.example, nicolas.perron@demo.example",
+      "subject": "SEC-210 - correctif déployé",
+      "date": "Sat, 19 Sep 2026 10:20:00 -0400"
+    },
+    "insights": {
+      "decisions": [
+        "Le correctif pour SEC-210 est déployé en validation depuis ce matin"
+      ],
+      "owners": [
+        "Julien Moreau",
+        "Sophie",
+        "l'équipe de Sophie"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Sophie peut faire son re-test quand son équipe est disponible"
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "README.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [
+        "En 24 heures, construisez une mémoire opérationnelle",
+        "Le dossier initial représente les informations disponibles le 30 septembre 2026 à 09 h 00, heure de Montréal"
+      ],
+      "commitments": [],
+      "risks": [
+        "Certaines sources sont anciennes, incomplètes, contradictoires ou peu utiles."
+      ]
+    }
+  },
+  {
+    "filename": "Decision_Portee_Phase2.md",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".md",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Boréal Numérique Inc."
+      ],
+      "deadlines": [
+        "2026-08-31"
+      ],
+      "commitments": [],
+      "risks": []
+    }
+  },
+  {
+    "filename": "E11_Communication_statut.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Nicolas Perron <nicolas.perron@demo.example>",
+      "to": "julien.moreau@boreal.example, amelie.fortin@demo.example",
+      "subject": "NOVA - CR-04 / mobile",
+      "date": "Thu, 24 Sep 2026 13:42:00 -0400"
+    },
+    "insights": {
+      "decisions": [
+        "Les optimisations mobiles avancées proposées dans CR-04 ne font pas partie de la phase 1 approuvée et sont reportées à la phase 2."
+      ],
+      "owners": [
+        "Nicolas Perron"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Aucune dépense liée à CR-04 ne doit être engagée ou facturée sans nouvelle approbation."
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "ACC-303.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [],
+      "commitments": [],
+      "risks": []
+    }
+  },
+  {
+    "filename": "E05_Retard_integration.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Julien Moreau <julien.moreau@boreal.example>",
+      "to": "melissa.gagnon@demo.example",
+      "subject": "RE: anomalies accessibilité NOVA",
+      "date": "Thu, 20 Aug 2026 15:44:00 -0400"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Julien Moreau",
+        "Mélissa"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Julien Moreau pushed corrections for labels and contrast",
+        "Mélissa to re-run accessibility testing"
+      ],
+      "risks": [
+        "Accessibility anomalies regarding labels and contrast",
+        "Modals need to be made keyboard accessible in a future build"
+      ]
+    }
+  },
+  {
+    "filename": "OPS-601.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Fermer le ticket INT-101 suite à la validation côté intégration"
+      ],
+      "owners": [
+        "Marc Gervais",
+        "Boréal"
+      ],
+      "deadlines": [
+        "15 octobre"
+      ],
+      "commitments": [
+        "Déployer le correctif pour résoudre le problème de connecteur",
+        "Rejouer 120 recherches"
+      ],
+      "risks": [
+        "Erreurs intermittentes mettant en risque la date du 15 octobre sans stabilité cette semaine",
+        "Jeton de service expiré après le changement de secret"
+      ]
+    }
+  },
+  {
+    "filename": "CR-04_Optimisation_mobile_BROUILLON.pdf",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".pdf",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [
+        "22 octobre"
+      ],
+      "commitments": [
+        "Finaliser le Runbook"
+      ],
+      "risks": [
+        "Le rapport a été préparé avant la dernière vérification détaillée de certains tickets"
+      ]
+    }
+  },
+  {
+    "filename": "ADR-007_Localisation_donnees.md",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".md",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [
+        "Demande de changement CR-01 pour l'ajout de rapports avancés et export de synthèse APPROUVÉE par le Comité de projet"
+      ],
+      "owners": [
+        "Comité de projet"
+      ],
+      "deadlines": [
+        "14 août 2026"
+      ],
+      "commitments": [
+        "Ajout de rapports avancés et export de synthèse suite à l'approbation de la demande de changement CR-01 pour un montant de 24 000 $"
+      ],
+      "risks": [
+        "Impact financier de 24 000 $"
+      ]
+    }
+  },
+  {
+    "filename": "Notes_personnelles_quelquun.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Nicolas reprend officiellement NOVA a partir d'aujourd'hui (16 septembre 2026)"
+      ],
+      "owners": [
+        "Nicolas",
+        "Elodie"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Elodie reste joignable quelques jours pour la transition",
+        "Nicolas reprend aussi le comite du vendredi"
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "E07_Facture_003_question.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Élodie Caron <elodie.caron@demo.example>",
+      "to": "equipe-nova@demo.example",
+      "subject": "NOVA - transition de la charge de projet",
+      "date": "Wed, 16 Sep 2026 08:35:00 -0400"
+    },
+    "insights": {
+      "decisions": [
+        "Nicolas Perron prend officiellement la charge du projet NOVA à compter du 16 septembre 2026."
+      ],
+      "owners": [
+        "Nicolas Perron",
+        "Élodie Caron",
+        "equipe-nova"
+      ],
+      "deadlines": [
+        "16 septembre 2026"
+      ],
+      "commitments": [
+        "Élodie Caron demeure disponible quelques jours pour assurer le transfert.",
+        "Diriger les décisions et suivis futurs vers Nicolas Perron."
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "Rapport_Statut_21sept.pdf",
+    "file_type": "txt",
+    "metadata": {
+      "original_extension": ".pdf",
+      "detected_type": "text"
+    },
+    "insights": {
+      "decisions": [
+        "Remplacer le suivi dispersé par courriel et fichiers locaux par un portail centralisé de demandes opérationnelles."
+      ],
+      "owners": [
+        "Élodie Caron",
+        "Boréal Numérique"
+      ],
+      "deadlines": [
+        "15 octobre 2026"
+      ],
+      "commitments": [
+        "Mettre en place la phase 1 incluant l'authentification SSO, la création et le suivi de demandes, l'ajout de pièces jointes, le workflow de traitement, le tableau de suivi et les rapports standards."
+      ],
+      "risks": []
+    }
+  },
+  {
+    "filename": "M04_Transcript_Comite_direction_10sept.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "La région d'hébergement pour les données de production NOVA est Canada Central.",
+        "L'authentification en production sera SSO seulement, sans comptes locaux."
+      ],
+      "owners": [
+        "Élodie Caron",
+        "Marc Gervais",
+        "Sophie Lambert",
+        "Julien Moreau"
+      ],
+      "deadlines": [
+        "avant août",
+        "15 octobre"
+      ],
+      "commitments": [
+        "Julien Moreau va basculer le design vers Canada Central, recréer les ressources et valider les services disponibles.",
+        "Élodie Caron va noter la décision concernant la région d'hébergement et faire un ADR.",
+        "Julien Moreau enverra les paramètres pour le chiffrement géré côté plateforme.",
+        "Julien Moreau montrera le composant d'audit log en validation."
+      ],
+      "risks": [
+        "Le micro de Marc Gervais coupe un peu.",
+        "L'attente du compte de service pour le connecteur interne (Marc Gervais veut l'avoir avant août)."
+      ]
+    }
+  },
+  {
+    "filename": "Teams_22sept_Mobile.txt",
+    "file_type": "pdf",
+    "metadata": {
+      "page_count": 1,
+      "original_extension": ".txt",
+      "detected_type": "pdf"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [],
+      "deadlines": [
+        "18 juillet 2026"
+      ],
+      "commitments": [],
+      "risks": [
+        "Version initiale préparée avant la décision de localisation des données"
+      ]
+    }
+  },
+  {
+    "filename": "E06_Transition_charge_projet.eml",
+    "file_type": "eml",
+    "metadata": {
+      "from": "Julien Moreau <julien.moreau@boreal.example>",
+      "to": "elodie.caron@demo.example, nicolas.perron@demo.example",
+      "subject": "NOVA - risque sur la date du 15 octobre",
+      "date": "Tue, 08 Sep 2026 11:16:00 -0400"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Julien Moreau"
+      ],
+      "deadlines": [
+        "15 octobre",
+        "22 octobre"
+      ],
+      "commitments": [
+        "Proposer de déplacer la mise en production au 22 octobre"
+      ],
+      "risks": [
+        "Le problème du connecteur interne a fait perdre davantage de temps que prévu",
+        "Viser le 15 octobre laisserait très peu de marge pour la stabilisation"
+      ]
+    }
+  },
+  {
+    "filename": "Newsletter_Boreal_Septembre.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Le comité a approuvé le 22 octobre comme nouvelle date le 10 septembre."
+      ],
+      "owners": [
+        "Alex",
+        "Nicolas"
+      ],
+      "deadlines": [
+        "22 octobre"
+      ],
+      "commitments": [
+        "Alex change son brouillon de communication aux équipes."
+      ],
+      "risks": [
+        "Le plan projet n'a visiblement pas encore été corrigé."
+      ]
+    }
+  },
+  {
+    "filename": "ACC-301.txt",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "INT-101 : le connecteur interne a été validé et fermé le 17 septembre",
+        "Accessibilité : ACC-301 et ACC-302 sont fermés",
+        "Le 22 octobre reste la date approuvée pour le go-live"
+      ],
+      "owners": [
+        "Boréal",
+        "Nicolas Perron",
+        "Marc Gervais",
+        "Sophie Lambert",
+        "Mélissa Gagnon",
+        "Olivier Côté"
+      ],
+      "deadlines": [
+        "17 septembre",
+        "22 octobre"
+      ],
+      "commitments": [
+        "Boréal prépare un correctif concernant la journalisation des exports administrateur",
+        "La validation sécurité restera requise après livraison",
+        "Un scénario de navigation clavier sur modal doit encore être vérifié"
+      ],
+      "risks": [
+        "Exploitation : le runbook n'est pas final"
+      ]
+    }
+  },
+  {
+    "filename": "INV-778_Projet_ORION.pdf",
+    "file_type": "txt",
+    "metadata": {
+      "original_extension": ".pdf",
+      "detected_type": "text"
+    },
+    "insights": {
+      "decisions": [
+        "Les optimisations mobiles avancées associées à la demande CR-04 sont reportées à la phase 2."
+      ],
+      "owners": [
+        "Boréal"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "La phase 1 doit demeurer utilisable sur mobile."
+      ],
+      "risks": [
+        "Aucune dépense additionnelle liée à CR-04 ne doit être engagée sans nouvelle approbation."
+      ]
+    }
+  },
+  {
+    "filename": "CR-01_Rapports_avances_APPROUVE.pdf",
+    "file_type": "xlsx",
+    "metadata": {
+      "sheet_count": 1,
+      "sheets": [
+        "Plan projet"
+      ],
+      "original_extension": ".pdf",
+      "detected_type": "xlsx"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Élodie Caron",
+        "Marc Gervais",
+        "Boréal Numérique",
+        "Mélissa Gagnon",
+        "Olivier Côté",
+        "Nicolas Perron"
+      ],
+      "deadlines": [
+        "2026-07-07",
+        "2026-07-18",
+        "2026-07-14",
+        "2026-08-28",
+        "2026-07-20",
+        "2026-09-30",
+        "2026-09-21",
+        "2026-10-05",
+        "2026-09-28",
+        "2026-10-10",
+        "2026-10-15"
+      ],
+      "commitments": [
+        "Élodie Caron: Cadrage (2026-07-07 to 2026-07-18)",
+        "Marc Gervais: Architecture (2026-07-14 to 2026-08-28)",
+        "Boréal Numérique: Développement phase 1 (2026-07-20 to 2026-09-30)",
+        "Mélissa Gagnon: Tests intégrés (2026-09-21 to 2026-10-05)",
+        "Olivier Côté: Préparation exploitation (2026-09-28 to 2026-10-10)",
+        "Nicolas Perron: Mise en production (2026-10-15)"
+      ],
+      "risks": [
+        "Migration Canada requise pour l'architecture"
+      ]
+    }
+  },
+  {
+    "filename": "INV-001.pdf",
+    "file_type": "xlsx",
+    "metadata": {
+      "sheet_count": 1,
+      "sheets": [
+        "Risques"
+      ],
+      "original_extension": ".pdf",
+      "detected_type": "xlsx"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Marc Gervais",
+        "Sophie Lambert",
+        "Olivier Côté",
+        "Mélissa Gagnon",
+        "Camille Beaulieu"
+      ],
+      "deadlines": [
+        "9 septembre 2026"
+      ],
+      "commitments": [
+        "Suivi fournisseur hebdomadaire pour R-01 Retard du connecteur interne",
+        "Re-test de SEC-210 avant go-live pour R-02 Validation sécurité incomplète",
+        "Finaliser le runbook et le rollback pour R-03 Préparation exploitation incomplète",
+        "Fermer ACC-303 pour R-04 Accessibilité",
+        "Contrôle de doublons pour R-05 Migration données"
+      ],
+      "risks": [
+        "R-01 Retard du connecteur interne",
+        "R-02 Validation sécurité incomplète",
+        "R-03 Préparation exploitation incomplète",
+        "R-04 Accessibilité",
+        "R-05 Migration données"
+      ]
+    }
+  },
+  {
+    "filename": "CONTRAT_Boreal_NOVA.pdf",
+    "file_type": "xlsx",
+    "metadata": {
+      "sheet_count": 1,
+      "sheets": [
+        "Plan projet"
+      ],
+      "original_extension": ".pdf",
+      "detected_type": "xlsx"
+    },
+    "insights": {
+      "decisions": [],
+      "owners": [
+        "Élodie Caron",
+        "Marc Gervais",
+        "Boréal Numérique",
+        "Mélissa Gagnon",
+        "Olivier Côté"
+      ],
+      "deadlines": [
+        "2026-07-07",
+        "2026-07-18",
+        "2026-07-14",
+        "2026-08-28",
+        "2026-07-20",
+        "2026-09-30",
+        "2026-09-21",
+        "2026-10-05",
+        "2026-09-28",
+        "2026-10-10",
+        "2026-10-15"
+      ],
+      "commitments": [
+        "Cadrage par Élodie Caron du 2026-07-07 au 2026-07-18",
+        "Architecture par Marc Gervais du 2026-07-14 au 2026-08-28",
+        "Développement phase 1 par Boréal Numérique du 2026-07-20 au 2026-09-30",
+        "Tests intégrés par Mélissa Gagnon du 2026-09-21 au 2026-10-05",
+        "Préparation exploitation par Olivier Côté du 2026-09-28 au 2026-10-10",
+        "Mise en production par Élodie Caron le 2026-10-15"
+      ],
+      "risks": [
+        "Migration Canada requise pour l'architecture (Marc Gervais)"
+      ]
+    }
+  },
+  {
+    "filename": "DATA-401_doublons.png",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Un correctif est annoncé pour la prochaine build concernant le problème de focus de la popup dans le ticket ACC-303."
+      ],
+      "owners": [
+        "Mélissa Gagnon",
+        "Boréal"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Un correctif est annoncé pour la prochaine build concernant le ticket ACC-303."
+      ],
+      "risks": [
+        "Le focus de la popup ne va pas partout au clavier, empéchant d'atteindre le bouton Enregistrer sur Chrome et Edge.",
+        "Le composant modal intercepte le focus avec une liste d'éléments focusables incomplète."
+      ]
+    }
+  },
+  {
+    "filename": "ACC-302_contraste.png",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Ajout du label programmatique et aria-describedby pour l'aide contextuelle"
+      ],
+      "owners": [
+        "Mélissa",
+        "Boréal",
+        "QA"
+      ],
+      "deadlines": [
+        "11 août 2026",
+        "12 août",
+        "14 août",
+        "15 août"
+      ],
+      "commitments": [
+        "Validation avec NVDA et VoiceOver effectuée par Mélissa"
+      ],
+      "risks": [
+        "Il manque quelque chose sur le champ nom et NVDA annonce juste edit blank"
+      ]
+    }
+  },
+  {
+    "filename": "ACC-303_focus.png",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Palette de statut corrigée par Boréal"
+      ],
+      "owners": [
+        "QA",
+        "Mélissa",
+        "Boréal"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Palette de statut corrigée"
+      ],
+      "risks": [
+        "Le bleu/gris est bizarre avec un ratio mesuré de 2,1:1 entre le texte de statut et le fond au lieu des 4,5:1 visés pour du texte normal"
+      ]
+    }
+  },
+  {
+    "filename": "PERF-501_lenteur.png",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Nicolas a confirmé que la procédure de rollback et les étapes manquantes font partie des conditions de go-live du comité."
+      ],
+      "owners": [
+        "Olivier Côté",
+        "Nicolas",
+        "l'équipe projet"
+      ],
+      "deadlines": [
+        "25 septembre 2026",
+        "25 sept",
+        "26 sept",
+        "29 sept"
+      ],
+      "commitments": [
+        "Fournir la version finale du runbook incluant la procédure de rollback et les étapes à compléter pour qu'une autre personne puisse l'exécuter sans appeler l'équipe projet."
+      ],
+      "risks": [
+        "Le document n'est pas prêt pour la production.",
+        "Il manque au minimum la procédure de rollback et une autre étape à compléter identifiée dans la capture jointe.",
+        "Le demandeur n'a toujours pas reçu la version finale au 29 septembre."
+      ]
+    }
+  },
+  {
+    "filename": "ACC-301_labels.png",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Le 22 octobre reste la cible pour la mise en production, mais c'est conditionnel à trois éléments : la validation sécurité de SEC-210, la fermeture de ACC-303, et l'approbation du runbook incluant le rollback",
+        "Refus de facturer du CR-04 car il n'est pas approuvé"
+      ],
+      "owners": [
+        "Nicolas Perron",
+        "Sophie Lambert",
+        "Mélissa Gagnon",
+        "Olivier Côté",
+        "Julien Moreau (Boréal)",
+        "Équipe ops de Julien"
+      ],
+      "deadlines": [
+        "22 octobre 2026",
+        "19 septembre",
+        "26 septembre 2026 - 10:00 à 10:34"
+      ],
+      "commitments": [
+        "Julien vise le correctif ACC-303 dans la prochaine build",
+        "Julien relance son équipe ops pour le runbook",
+        "Nicolas publie le compte rendu avec la cible du 22 octobre et les trois conditions de go-live"
+      ],
+      "risks": [
+        "Absence d'acceptation sécurité de SEC-210",
+        "ACC-303 : la modale ne permet toujours pas d'atteindre Enregistrer au clavier (bloquant d'accessibilité avant production)",
+        "Runbook encore incomplet, il manque le rollback et l'approbation d'exploitation d'Olivier",
+        "Disparition du câble HDMI de la salle 4"
+      ]
+    }
+  },
+  {
+    "filename": "SEC-210_audit.png",
+    "file_type": "txt",
+    "metadata": {},
+    "insights": {
+      "decisions": [
+        "Fermeture du ticket PERF-501 après résolution des lenteurs"
+      ],
+      "owners": [
+        "Support",
+        "Dév",
+        "utilisateur pilote"
+      ],
+      "deadlines": [],
+      "commitments": [
+        "Ajout d'un index et modification de la requête par le développeur",
+        "Vérification par le Support avec une moyenne observée de 620 ms sur 50 essais"
+      ],
+      "risks": [
+        "Lenteur du système signalée par les utilisateurs",
+        "La route /dossiers/search fait un scan complet sans filtre de statut, entraînant des temps de 6 à 8 s sur le dataset de validation"
+      ]
+    }
+  }
+]
