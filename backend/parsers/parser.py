@@ -26,8 +26,17 @@ def parse_document(file_path: str) -> dict:
     if not path.exists():
         raise FileNotFoundError(f"File not found: {file_path}")
 
-    extension = path.suffix.lower()
+    # Detect real PDFs even when the extension is wrong.
+    with path.open("rb") as f:
+        header = f.read(8)
 
+    if header.startswith(b"%PDF-"):
+        result = parse_pdf(str(path))
+        result["metadata"]["original_extension"] = path.suffix.lower()
+        result["metadata"]["detected_type"] = "pdf"
+        return result
+
+    extension = path.suffix.lower()
     parser = PARSERS.get(extension)
 
     if parser is None:
