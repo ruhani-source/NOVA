@@ -1,5 +1,7 @@
 from flask import Blueprint, jsonify, request
 
+from backend.services.ask_nova import answer_question
+
 
 api = Blueprint("api", __name__)
 new_information = []
@@ -39,9 +41,24 @@ def ask():
             "error": "Question is required"
         }), 400
 
-    return jsonify({
-        "answer": "NOVA received your question. AI processing will be connected here."
-    })
+    try:
+        information = new_information
+
+        answer = answer_question(
+            question,
+            information
+        )
+
+        return jsonify({
+            "answer": answer
+        })
+
+    except Exception as error:
+        print(f"Ask NOVA error: {error}")
+
+        return jsonify({
+            "error": "NOVA could not answer the question right now."
+        }), 500
 
 @api.route("/information", methods=["POST"])
 def add_information():
