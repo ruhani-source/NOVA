@@ -113,12 +113,6 @@ h1 {
     color: #6b7280;
 }
 
-.insights {
-    background: white;
-    padding: 35px;
-    border-radius: 14px;
-    border: 1px solid #e5e7eb;
-}
 
 .section-header {
     margin-bottom: 25px;
@@ -128,12 +122,6 @@ h1 {
     font-size: 26px;
 }
 
-.insight-box {
-    padding: 25px;
-    background: #f5f7fb;
-    border-radius: 10px;
-    color: #6b7280;
-}
 
 footer {
     text-align: center;
@@ -155,4 +143,121 @@ footer {
     h1 {
         font-size: 34px;
     }
+}
+
+.ask-nova {
+    margin-top: 30px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+}
+
+.section-description {
+    margin-top: 8px;
+    color: #6b7280;
+}
+
+.question-container {
+    margin-top: 25px;
+}
+
+#question-input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    resize: vertical;
+    outline: none;
+}
+
+#question-input:focus {
+    border-color: #6366f1;
+}
+
+#ask-button {
+    margin-top: 12px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#ask-button:hover {
+    opacity: 0.9;
+}
+
+.answer-box {
+    margin-top: 25px;
+    padding: 22px;
+    background: #f5f7fb;
+    border-radius: 10px;
+    min-height: 100px;
+}
+
+.answer-label {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.new-information {
+    margin-top: 30px;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+}
+
+.information-container {
+    margin-top: 25px;
+}
+
+#information-input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    resize: vertical;
+    outline: none;
+}
+
+#information-input:focus {
+    border-color: #6366f1;
+}
+
+#information-button {
+    margin-top: 12px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#information-button:hover {
+    opacity: 0.9;
+}
+
+#information-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.information-status {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f5f7fb;
+    border-radius: 10px;
+    color: #6b7280;
 }
