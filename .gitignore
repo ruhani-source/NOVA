@@ -24,3 +24,7 @@ __pycache__/
 
 # Generated/processed data
 data/processed/
+
+# Local fallback for new information when the database is unavailable
+data/new_information_fallback.json
+data/*.json.tmp

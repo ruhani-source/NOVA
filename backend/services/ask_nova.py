@@ -129,3 +129,20 @@ USER QUESTION:
             time.sleep(wait_time)
 
     raise RuntimeError("NOVA could not generate an answer.")
+
+
+def answer_question_with_database(question: str) -> str:
+    """
+    Answer a question using the knowledge base plus all persisted
+    new information. Timestamps are included so newer information
+    can take priority over older sources.
+    """
+
+    from backend.services.database_service import get_information_records
+
+    additional_information = [
+        f"[added {record['created_at']}] {record['information']}"
+        for record in get_information_records()
+    ]
+
+    return answer_question(question, additional_information)
