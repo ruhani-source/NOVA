@@ -1,0 +1,449 @@
+{
+  "_about": "Vérité terrain Q01-Q10, établie manuellement à partir de data/raw (baseline 30 sept. 2026 09:00). Chaque extrait est vérifié automatiquement dans data/evidence_corpus.json par tests/test_evidence_store.py. role = autorité | contradiction | historique | contexte.",
+  "Q01": {
+    "answer": "22 octobre 2026, approuvé par le comité de direction le 10 septembre; réserve : ce n'est pas un go automatique, la date est conditionnelle à trois conditions (validation sécurité SEC-210, fermeture ACC-303, approbation du runbook incluant rollback) précisées au comité du 26 septembre.",
+    "evidence": [
+      {
+        "file": "M06_Transcript_Comite_26sept.txt",
+        "locator": "L17",
+        "snippet": "déplacée du 15 octobre",
+        "role": "autorité"
+      },
+      {
+        "file": "M06_Transcript_Comite_26sept.txt",
+        "locator": "L23",
+        "snippet": "Donc **approuvé**",
+        "role": "autorité"
+      },
+      {
+        "file": "M06_Transcript_Comite_26sept.txt",
+        "locator": "L24",
+        "snippet": "pas un go automatique",
+        "role": "autorité"
+      },
+      {
+        "file": "ACC-301_labels.png",
+        "locator": "L11",
+        "snippet": "trois conditions concrètes",
+        "role": "autorité"
+      },
+      {
+        "file": "ACC-301_labels.png",
+        "locator": "L16",
+        "snippet": "conditionnel à ces trois",
+        "role": "autorité"
+      },
+      {
+        "file": "E10_Fonction_mobile.eml",
+        "locator": "L5",
+        "snippet": "conditionnelle aux validations",
+        "role": "autorité"
+      },
+      {
+        "file": "CR-01_Rapports_avances_APPROUVE.pdf",
+        "locator": "feuille 'Plan projet', ligne 7 (A7:G7)",
+        "snippet": "F7=2026-10-15",
+        "role": "contradiction"
+      },
+      {
+        "file": "Newsletter_Boreal_Septembre.txt",
+        "locator": "L5",
+        "snippet": "approuvé le 22 octobre le 10 septembre",
+        "role": "contradiction"
+      }
+    ]
+  },
+  "Q02": {
+    "answer": "Le connecteur interne (INT-101 : jeton de service expiré après changement de secret, erreurs 401 puis intermittentes) a consommé la marge; Boréal a recommandé le 22 octobre. Cause initiale : corrigée (rotation du secret + logique de renouvellement du jeton), validée 120/120 et INT-101 fermé le 17 septembre par Marc Gervais. Le registre de risques garde R-01 « Ouvert » (suivi au 9 septembre) : il n'est pas à jour.",
+    "evidence": [
+      {
+        "file": "E06_Transition_charge_projet.eml",
+        "locator": "L3",
+        "snippet": "perdre davantage",
+        "role": "autorité"
+      },
+      {
+        "file": "OPS-601.txt",
+        "locator": "L15",
+        "snippet": "jeton de service semble expiré",
+        "role": "autorité"
+      },
+      {
+        "file": "PERF-501.txt",
+        "locator": "L1",
+        "snippet": "401 Unauthorized",
+        "role": "autorité"
+      },
+      {
+        "file": "OPS-601.txt",
+        "locator": "L18",
+        "snippet": "Je ferme",
+        "role": "autorité"
+      },
+      {
+        "file": "OPS-601.txt",
+        "locator": "L20",
+        "snippet": "rotation du secret",
+        "role": "autorité"
+      },
+      {
+        "file": "M01_CR_Demarrage_07juillet.txt",
+        "locator": "L3",
+        "snippet": "120/120",
+        "role": "autorité"
+      },
+      {
+        "file": "INV-001.pdf",
+        "locator": "feuille 'Risques', ligne 2 (A2:H2)",
+        "snippet": "R-01",
+        "role": "contradiction"
+      }
+    ]
+  },
+  "Q03": {
+    "answer": "Proposition : Julien Moreau (Boréal) par courriel le 8 septembre 2026, explicitement « une proposition », répétée au comité du 10 septembre. Approbation : comité de direction du 10 septembre 2026; décision formulée par Élodie Caron (chargée de projet), sans opposition (Sophie, Marc, Olivier, Nicolas).",
+    "evidence": [
+      {
+        "file": "E06_Transition_charge_projet.eml",
+        "locator": "L7",
+        "snippet": "proposition de notre part",
+        "role": "autorité"
+      },
+      {
+        "file": "E06_Transition_charge_projet.eml",
+        "locator": "en-têtes",
+        "snippet": "en-têtes",
+        "role": "autorité"
+      },
+      {
+        "file": "M06_Transcript_Comite_26sept.txt",
+        "locator": "L6",
+        "snippet": "Notre recommandation est de déplacer le lancement",
+        "role": "autorité"
+      },
+      {
+        "file": "M06_Transcript_Comite_26sept.txt",
+        "locator": "L19",
+        "snippet": "15:23 Sophie : Non",
+        "role": "autorité"
+      },
+      {
+        "file": "M06_Transcript_Comite_26sept.txt",
+        "locator": "L23",
+        "snippet": "Donc **approuvé**",
+        "role": "autorité"
+      }
+    ]
+  },
+  "Q04": {
+    "answer": "Nicolas Perron, chargé de projet depuis le 16 septembre 2026 (succède à Élodie Caron, en poste depuis le 7 juillet 2026).",
+    "evidence": [
+      {
+        "file": "E07_Facture_003_question.eml",
+        "locator": "L3",
+        "snippet": "prend officiellement",
+        "role": "autorité"
+      },
+      {
+        "file": "Registre_Risques_29sept.xlsx",
+        "locator": "L4",
+        "snippet": "reprend le rôle",
+        "role": "autorité"
+      },
+      {
+        "file": "Notes_personnelles_quelquun.txt",
+        "locator": "L4",
+        "snippet": "reprend officiellement",
+        "role": "autorité"
+      },
+      {
+        "file": "M03_CR_Comite_27aout.txt",
+        "locator": "L9",
+        "snippet": "Élodie Caron agit",
+        "role": "historique"
+      },
+      {
+        "file": "CONTRAT_Boreal_NOVA.pdf",
+        "locator": "feuille 'Plan projet', ligne 7 (A7:G7)",
+        "snippet": "D7=Élodie Caron",
+        "role": "contradiction"
+      }
+    ]
+  },
+  "Q05": {
+    "answer": "204 000 $ CAD (HT) = 180 000 $ (montant maximal initial du contrat) + 24 000 $ (CR-01 approuvé le 14 août 2026). CR-04 (18 000 $) n'est pas approuvé et n'entre pas dans le calcul. Facturé : 186 000 $ (INV-001 60 000 + INV-002 72 000 + INV-003 54 000); payé : 132 000 $ (INV-001 et INV-002); INV-003 en validation.",
+    "evidence": [
+      {
+        "file": "INV-003.pdf",
+        "locator": "page 1",
+        "snippet": "Montant maximal initial",
+        "role": "autorité"
+      },
+      {
+        "file": "ADR-007_Localisation_donnees.md",
+        "locator": "page 1",
+        "snippet": "24 000",
+        "role": "autorité"
+      },
+      {
+        "file": "Architecture_NOVA_v1.pdf",
+        "locator": "page 1",
+        "snippet": "BROUILLON - APPROBATION REQUISE",
+        "role": "autorité"
+      },
+      {
+        "file": "Architecture_NOVA_v2.pdf",
+        "locator": "page 1",
+        "snippet": "INV-001",
+        "role": "contexte"
+      },
+      {
+        "file": "Decision_Portee_Phase2.md",
+        "locator": "page 1",
+        "snippet": "INV-002",
+        "role": "contexte"
+      },
+      {
+        "file": "Teams_15sept_ProjetNOVA.txt",
+        "locator": "page 1",
+        "snippet": "En validation",
+        "role": "contexte"
+      }
+    ]
+  },
+  "Q06": {
+    "answer": "INV-003 (22 sept., 54 000 $, en validation) facture 18 000 $ « Optimisation interface mobile - CR-04 » alors que CR-04 est un brouillon non approuvé, reporté à la phase 2 le 24 septembre. Le contrat exige une demande de changement approuvée avant exécution et facturation. Traitement : ne pas payer la ligne de 18 000 $ (retenir / demander une facture corrigée — recommandation); seule la ligne jalon 3 de 36 000 $ peut suivre la validation normale.",
+    "evidence": [
+      {
+        "file": "Teams_15sept_ProjetNOVA.txt",
+        "locator": "page 1",
+        "snippet": "En validation",
+        "role": "autorité"
+      },
+      {
+        "file": "E08_Correctif_journalisation.eml",
+        "locator": "L5",
+        "snippet": "ligne de 18 000",
+        "role": "autorité"
+      },
+      {
+        "file": "E11_Communication_statut.eml",
+        "locator": "L5",
+        "snippet": "Aucune dépense",
+        "role": "autorité"
+      },
+      {
+        "file": "INV-778_Projet_ORION.pdf",
+        "locator": "L4",
+        "snippet": "reportées à la phase 2",
+        "role": "autorité"
+      },
+      {
+        "file": "MANIFEST.csv",
+        "locator": "L5",
+        "snippet": "CR-04 à 18k",
+        "role": "autorité"
+      },
+      {
+        "file": "ACC-301_labels.png",
+        "locator": "L23",
+        "snippet": "Facturer du CR-04, non",
+        "role": "autorité"
+      },
+      {
+        "file": "INV-003.pdf",
+        "locator": "page 1",
+        "snippet": "écrite et approuvée",
+        "role": "autorité"
+      }
+    ]
+  },
+  "Q07": {
+    "answer": "Canada Central (ADR-007, décision du 23 juillet 2026, statut Acceptée; v1 East US remplacée). Preuve : Boréal déclare la migration complétée le 26 août avec test de déploiement/connectivité et schéma v2; le comité du 27 août indique qu'elle a été vérifiée par l'équipe architecture. Le schéma v2 joint au courriel est le même fichier que Courriel_archive_17sept.eml (pas une preuve indépendante).",
+    "evidence": [
+      {
+        "file": "Teams_19sept_Securite.txt",
+        "locator": "L10",
+        "snippet": "Canada Central",
+        "role": "autorité"
+      },
+      {
+        "file": "Teams_19sept_Securite.txt",
+        "locator": "L4",
+        "snippet": "Acceptée",
+        "role": "autorité"
+      },
+      {
+        "file": "M04_Transcript_Comite_direction_10sept.txt",
+        "locator": "L13",
+        "snippet": "on tranche Canada Central",
+        "role": "autorité"
+      },
+      {
+        "file": "E04_Corrections_accessibilite.eml",
+        "locator": "L3",
+        "snippet": "Canada Central est",
+        "role": "autorité"
+      },
+      {
+        "file": "M05_CR_Suivi_18sept.txt",
+        "locator": "L5",
+        "snippet": "vérifiée par l'équipe architecture",
+        "role": "autorité"
+      },
+      {
+        "file": "Courriel_archive_17sept.eml",
+        "locator": "page 1",
+        "snippet": "Canada Central",
+        "role": "autorité"
+      },
+      {
+        "file": "Teams_22sept_Mobile.txt",
+        "locator": "page 1",
+        "snippet": "East US",
+        "role": "historique"
+      }
+    ]
+  },
+  "Q08": {
+    "answer": "Non. Livraison : Boréal a déployé le correctif SEC-210 en validation le 19 septembre. Validation : Sophie Lambert n'a pas donné l'acceptation; re-test planifié, statut maintenu EN VALIDATION le 26 septembre. Le rapport de statut du 21 septembre (« Sécurité VERT ») est contredit.",
+    "evidence": [
+      {
+        "file": "E09_Rappel_mise_en_production.eml",
+        "locator": "L3",
+        "snippet": "déployé en validation",
+        "role": "autorité"
+      },
+      {
+        "file": "Note_transition_Elodie_16sept.txt",
+        "locator": "L24",
+        "snippet": "Ne pas fermer avant",
+        "role": "autorité"
+      },
+      {
+        "file": "Note_transition_Elodie_16sept.txt",
+        "locator": "L25",
+        "snippet": "Re-test planifié",
+        "role": "autorité"
+      },
+      {
+        "file": "ACC-301_labels.png",
+        "locator": "L7",
+        "snippet": "pas encore donné l'acceptation",
+        "role": "autorité"
+      },
+      {
+        "file": "Plan_NOVA_preliminaire_juin.xlsx",
+        "locator": "L5",
+        "snippet": "!= « accepté »",
+        "role": "autorité"
+      },
+      {
+        "file": "CR-04_Optimisation_mobile_BROUILLON.pdf",
+        "locator": "page 1",
+        "snippet": "Correctif SEC-210 livré",
+        "role": "contradiction"
+      }
+    ]
+  },
+  "Q09": {
+    "answer": "Non. ACC-301 (libellés, fermé 15 août) et ACC-302 (contraste, fermé 20 août) sont validés. Reste ACC-303 (OUVERT, haute) : dans la modale, le focus clavier ne rejoint jamais Enregistrer; bloquant avant production; correctif annoncé pour la prochaine build mais non livré/validé.",
+    "evidence": [
+      {
+        "file": "DATA-401_doublons.png",
+        "locator": "L6",
+        "snippet": "OUVERT",
+        "role": "autorité"
+      },
+      {
+        "file": "DATA-401_doublons.png",
+        "locator": "L14",
+        "snippet": "jamais atteint",
+        "role": "autorité"
+      },
+      {
+        "file": "DATA-401_doublons.png",
+        "locator": "L16",
+        "snippet": "Toujours ouvert",
+        "role": "autorité"
+      },
+      {
+        "file": "ACC-301_labels.png",
+        "locator": "L9",
+        "snippet": "Il reste ACC-303",
+        "role": "autorité"
+      },
+      {
+        "file": "ACC-302_contraste.png",
+        "locator": "L16",
+        "snippet": "Fermé.",
+        "role": "autorité"
+      },
+      {
+        "file": "ACC-303_focus.png",
+        "locator": "L16",
+        "snippet": "Fermé.",
+        "role": "autorité"
+      },
+      {
+        "file": "DATA-401_echantillon.csv",
+        "locator": "capture, élément 5",
+        "snippet": "Le focus clavier",
+        "role": "autorité"
+      },
+      {
+        "file": "E05_Retard_integration.eml",
+        "locator": "L3",
+        "snippet": "conforme",
+        "role": "contradiction"
+      }
+    ]
+  },
+  "Q10": {
+    "answer": "Conditions (comité du 26 sept.) : 1) validation sécurité de SEC-210; 2) fermeture d'ACC-303; 3) approbation du runbook incluant rollback. Capture du runbook (version du 25 sept.) : étape 4 « Procédure de retour arrière » TODO et étape 5 « Validation fonctionnelle post-déploiement » À compléter; étapes 1-3 OK. OPS-601 toujours OUVERT au 29 sept.",
+    "evidence": [
+      {
+        "file": "ACC-301_labels.png",
+        "locator": "L11",
+        "snippet": "trois conditions concrètes",
+        "role": "autorité"
+      },
+      {
+        "file": "SEC-210.txt",
+        "locator": "capture, élément 1",
+        "snippet": "Version du 25",
+        "role": "autorité"
+      },
+      {
+        "file": "SEC-210.txt",
+        "locator": "capture, élément 6",
+        "snippet": "TODO",
+        "role": "autorité"
+      },
+      {
+        "file": "SEC-210.txt",
+        "locator": "capture, élément 7",
+        "snippet": "À compléter",
+        "role": "autorité"
+      },
+      {
+        "file": "PERF-501_lenteur.png",
+        "locator": "L14",
+        "snippet": "rollback",
+        "role": "autorité"
+      },
+      {
+        "file": "PERF-501_lenteur.png",
+        "locator": "L16",
+        "snippet": "Toujours pas reçu",
+        "role": "autorité"
+      },
+      {
+        "file": "INV-001.pdf",
+        "locator": "feuille 'Risques', ligne 4 (A4:H4)",
+        "snippet": "R-03",
+        "role": "autorité"
+      }
+    ]
+  }
+}

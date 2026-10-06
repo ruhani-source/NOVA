@@ -1,0 +1,89 @@
+{
+  "_method": "Transcription manuelle : chaque image a été ouverte et lue visuellement le 2026-10-04. Seul le texte visible est transcrit; rien n'est déduit. Les noms de fichiers du corpus ne correspondent pas toujours à leur contenu.",
+  "images": {
+    "SEC-210.txt": {
+      "shows": "Capture du runbook de mise en production (pièce jointe attendue du ticket OPS-601, citée comme « OPS-601_runbook.png »).",
+      "lines": [
+        "En-tête : NOVA — Version du 25 septembre",
+        "Titre : Runbook de mise en production",
+        "1. Vérifier la santé des services — OK",
+        "2. Activer le mode maintenance — OK",
+        "3. Déployer la version approuvée — OK",
+        "4. Procédure de retour arrière — TODO",
+        "5. Validation fonctionnelle post-déploiement — À compléter"
+      ]
+    },
+    "Plan_Projet_NOVA_v2.xlsx": {
+      "shows": "Capture du journal d'audit administrateur (pièce jointe attendue du ticket SEC-210, citée comme « SEC-210_audit.png »).",
+      "lines": [
+        "En-tête : NOVA — Environnement de validation",
+        "Titre : Journal d'audit - administrateur",
+        "Colonnes : Heure | Utilisateur | Action | Objet | Résultat",
+        "14:02:10 | np.admin | LOGIN | Portail | SUCCÈS",
+        "14:03:44 | np.admin | VIEW_RECORD | Dossier 8401 | SUCCÈS",
+        "14:04:08 | np.admin | EXPORT_CSV | --- | ---",
+        "14:05:12 | np.admin | LOGOUT | Portail | SUCCÈS",
+        "Observation QA : Une exportation CSV a été effectuée à 14:04, mais aucun événement détaillé n'est visible."
+      ]
+    },
+    "DATA-401_echantillon.csv": {
+      "shows": "Capture de la fenêtre modale au clavier (pièce jointe attendue du ticket ACC-303, citée comme « ACC-303_focus.png »).",
+      "lines": [
+        "En-tête : NOVA — Build 2026.09.17",
+        "Titre : Fenêtre de modification — Modifier le dossier",
+        "Champs : Nom du demandeur (Camille Roy), Commentaire",
+        "Bouton « Enregistrer » encadré en rouge",
+        "Annotation : Le focus clavier ne rejoint pas ce bouton"
+      ]
+    },
+    "DATA-401.txt": {
+      "shows": "Capture du statut à faible contraste (pièce jointe attendue du ticket ACC-302, citée comme « ACC-302_contraste.png »).",
+      "lines": [
+        "En-tête : NOVA — Build 2026.08.12",
+        "Titre : Portail NOVA — État de la demande",
+        "Badge pâle : EN ATTENTE DE VALIDATION",
+        "Texte : Capture reçue avec le ticket : « le bleu/gris est bizarre »"
+      ]
+    },
+    "ACC-303.txt": {
+      "shows": "Capture du champ sans libellé (pièce jointe attendue du ticket ACC-301, citée comme « ACC-301_labels.png »).",
+      "lines": [
+        "En-tête : NOVA — Test accessibilité",
+        "Titre : Formulaire de création — Créer une demande",
+        "Champ avec placeholder « Votre nom »",
+        "Annotation : Le placeholder disparaît dès la saisie; aucun libellé associé n'est exposé."
+      ]
+    },
+    "INT-101_aucun_resultat.png": {
+      "shows": "Capture des doublons de migration (pièce jointe attendue du ticket DATA-401, citée comme « DATA-401_doublons.png »).",
+      "lines": [
+        "En-tête : NOVA — Lot MIG-09-02",
+        "Titre : Résultats de migration",
+        "Colonnes : ID | Demandeur | Courriel | Créé | Statut",
+        "8401 | Alex Martin | alex.martin@example.org | 15:03:12 | Nouveau (encadré rouge)",
+        "8402 | Alex Martin | alex.martin@example.org | 15:03:13 | Nouveau (encadré rouge)",
+        "8403 | Sam Tremblay | sam.t@example.org | 15:04:01 | Nouveau"
+      ]
+    },
+    "OPS-601_runbook.png": {
+      "shows": "Capture de la recherche sans résultat (pièce jointe attendue du ticket INT-101, citée comme « INT-101_aucun_resultat.png »).",
+      "lines": [
+        "En-tête : NOVA — Environnement intégration",
+        "Titre : Recherche de dossiers",
+        "Message : Aucun résultat",
+        "Texte : Le ticket original contient seulement : « ça marche pas »"
+      ]
+    },
+    "Charte_Projet_NOVA_v1.txt": {
+      "shows": "Capture d'analyse de performance (pièce jointe attendue du ticket PERF-501, citée comme « PERF-501_lenteur.png »).",
+      "lines": [
+        "En-tête : NOVA — Chrome - réseau entreprise",
+        "Titre : Analyse de performance",
+        "DOMContentLoaded : 2.4 s",
+        "Largest Contentful Paint : 7.8 s",
+        "API /dossiers/search : 6.9 s",
+        "Transfert : 1.3 MB"
+      ]
+    }
+  }
+}
