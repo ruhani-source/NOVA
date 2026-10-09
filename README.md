@@ -32,33 +32,39 @@ Built during a 24-hour hackathon, NOVA helps teams understand project decisions,
   - Includes an interactive chat interface for Ask NOVA.
 
 ## 🛠️ Tech Stack
+
 - **Backend**
-- Python
-- Flask
-- Flask-CORS
+  - Python
+  - Flask
+  - Flask-CORS
+    
 -**AI**
-- Google Gemini
-- Grounded question answering
-- Structured project insight extraction
+  - Google Gemini
+  - Grounded question answering
+  - Structured project insight extraction
+    
 -**Data & Storage**
-- Supabase
-- PostgreSQL
-- JSON fallback storage
+  - Supabase
+  - PostgreSQL
+  - JSON fallback storage
+    
 -**Document Processing**
-- PDF
-- DOCX
-- XLSX
-- CSV
-- EML
-- Markdown
-- TXT
+  - PDF
+  - DOCX
+  - XLSX
+  - CSV
+  - EML
+  - Markdown
+  - TXT
+    
 -**Frontend**
-- HTML
-- CSS
-- JavaScript
+  - HTML
+  - CSS
+  - JavaScript
+    
 -**Development**
-- Git
-- GitHub
-- Python virtual environment
+  - Git
+  - GitHub
+  - Python virtual environment
   - Provides API health/status feedback.
 
