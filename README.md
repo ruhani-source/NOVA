@@ -38,17 +38,17 @@ Built during a 24-hour hackathon, NOVA helps teams understand project decisions,
   - Flask
   - Flask-CORS
     
--**AI**
+- **AI**
   - Google Gemini
   - Grounded question answering
   - Structured project insight extraction
     
--**Data & Storage**
+- **Data & Storage**
   - Supabase
   - PostgreSQL
   - JSON fallback storage
     
--**Document Processing**
+- **Document Processing**
   - PDF
   - DOCX
   - XLSX
@@ -57,12 +57,12 @@ Built during a 24-hour hackathon, NOVA helps teams understand project decisions,
   - Markdown
   - TXT
     
--**Frontend**
+- **Frontend**
   - HTML
   - CSS
   - JavaScript
     
--**Development**
+- **Development**
   - Git
   - GitHub
   - Python virtual environment
