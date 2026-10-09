@@ -62,9 +62,5 @@ Built during a 24-hour hackathon, NOVA helps teams understand project decisions,
   - CSS
   - JavaScript
     
-- **Development**
-  - Git
-  - GitHub
-  - Python virtual environment
-  - Provides API health/status feedback.
+
 
